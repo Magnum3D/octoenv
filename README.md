@@ -5,5 +5,5 @@ Octoprint setup for Raspberry PI and Magnum3D printers
 
   * __timelapse*__ - scripts for making GoPro timelapses
   * __octo.update__ - update OctoPrint to latest version
-  * ''octo.run'' - run OctoPrint
+  * __octo.run__ - run OctoPrint
   
