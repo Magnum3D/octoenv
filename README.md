@@ -1,2 +1,3 @@
-# octoprint-env
-Octoprint setup for RPI2
+# octoenv
+Octoprint setup for Raspberry PI and Magnum3D printers
+
