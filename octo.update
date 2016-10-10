@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ -d OctoPrint ]; then
+    git pull OctoPrint
+else 
+    git clone https://github.com/foosel/OctoPrint.git
+fi
+cd OctoPrint
+virtualenv venv
+./venv/bin/pip install pip --upgrade
+./venv/bin/python setup.py install
+mkdir ~/.octoprint
