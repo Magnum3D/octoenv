@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ -f /home/pi/octoenv/timelapse.flag ]; then
+    echo "$(tail -n 100 /home/pi/octoenv/timelapse.log)" >/home/pi/octoenv/timelapse.log
+    echo `date +%c` taking screenshot >>/home/pi/octoenv/timelapse.log
+    python /home/pi/octoenv/timelapse-gopro.py takepic >>/home/pi/octoenv/timelapse.log
+fi

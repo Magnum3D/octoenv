@@ -1,0 +1,2 @@
+#!/bin/sh
+rm /home/pi/octoenv/timelapse.flag
