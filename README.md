@@ -10,4 +10,20 @@ Octoprint setup for Raspberry PI and Magnum3D printers
   * __mjpg.run__ - run mjpeg-streamer
   * __mjgp.update__ - update jpeg-streamer to latest verison
   
-  
+## Installation
+
+__Requires Raspbian Jessie 8 Based__
+
+1. First install essential software
+``
+sudo apt-get git curl
+``
+
+2. Checkout this project into /home/pi folder
+``
+git clone https://github.com/Magnum3D/octoenv/
+``
+
+3. Run ./octo.update from octoenv
+4. Run ./mjpg.update from octoenv
+
