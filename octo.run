@@ -1,2 +1,3 @@
 #!/bin/sh
-/home/pi/octoenv/OctoPrint/venv/bin/octoprint
+/home/pi/octoenv/OctoPrint/venv/bin/octoprint --daemon start --pid /tmp/octoprint.pid
+
