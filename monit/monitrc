@@ -1,0 +1,3 @@
+# Reload monit if main config changed
+check file monitrc with path /etc/monit/monitrc
+    if changed checksum then exec "/usr/sbin/service monit reload"

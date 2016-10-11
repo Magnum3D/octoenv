@@ -1,0 +1,7 @@
+# Reloads monit if configs changed
+check directory monit_confd with path /etc/monit/conf.d
+    if changed timestamp then exec "/usr/sbin/service monit reload"
+    restart program = "/usr/sbin/service reload monit"
+
+
+

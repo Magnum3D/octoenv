@@ -1,0 +1,7 @@
+# Starts mjpg streamer for camera
+check process mjpg matching mjpg_streamer
+   group pi
+   start program = "/home/pi/octoenv/mjpg.run" as uid "pi" and gid "pi"
+   if 4 restarts within 20 cycles then timeout
+
+

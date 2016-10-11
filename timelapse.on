@@ -1,2 +1,3 @@
 #!/bin/sh
 touch /home/pi/octoenv/timelapse.flag
+echo `date +%c` enabled timelapse >>/home/pi/octoenv/timelapse.log

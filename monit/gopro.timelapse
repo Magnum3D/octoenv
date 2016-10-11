@@ -1,0 +1,5 @@
+# If accessible that mean timelapses will be done
+check file gopro.timelapse with path /home/pi/octoenv/timelapse.flag
+    mode passive
+    start program = "/home/pi/octoenv/timelapse.on" as uid "pi" as gid "pi"
+    stop program = "/home/pi/octoenv/timelapse.off" as uid "pi" as gid "pi"

@@ -1,0 +1,7 @@
+# Check gopro availability,
+# Allow to start/stop wifi
+check host gopro with address "10.5.5.9"
+    mode passive
+    if failed port 80 then alert
+    start program = "/sbin/ifup wlan0"
+    stop program = "/sbin/ifdown wlan0"

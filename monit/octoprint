@@ -1,0 +1,8 @@
+# Control octoprint 
+check process octoprint matching octoprint
+   group pi
+   start program = "/home/pi/octoenv/octo.run" as uid "pi" and gid "pi"
+   stop program = "/home/pi/octoenv/octo.stop" as uid "pi" and gid "pi"
+   if 4 restarts within 20 cycles then timeout
+
+

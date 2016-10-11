@@ -1,0 +1,2 @@
+#!/bin/bash
+tail /home/pi/octoenv/timelapse.log
